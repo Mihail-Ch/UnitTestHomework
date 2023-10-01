@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0373DA7F2AC9AF1400B293B7 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373DA7E2AC9AF1400B293B7 /* Vehicle.swift */; };
+		0373DA812AC9B01200B293B7 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373DA802AC9B01200B293B7 /* Car.swift */; };
+		0373DA832AC9B2AA00B293B7 /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373DA822AC9B2AA00B293B7 /* Motorcycle.swift */; };
 		03E0F9FF2AC34D66003CEAF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E0F9FE2AC34D66003CEAF8 /* AppDelegate.swift */; };
 		03E0FA012AC34D66003CEAF8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E0FA002AC34D66003CEAF8 /* SceneDelegate.swift */; };
 		03E0FA032AC34D66003CEAF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E0FA022AC34D66003CEAF8 /* ViewController.swift */; };
@@ -37,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0373DA7E2AC9AF1400B293B7 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		0373DA802AC9B01200B293B7 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		0373DA822AC9B2AA00B293B7 /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
 		03E0F9FB2AC34D66003CEAF8 /* UnitTestHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E0F9FE2AC34D66003CEAF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		03E0FA002AC34D66003CEAF8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0373DA7D2AC9AE6700B293B7 /* Homework2 */ = {
+			isa = PBXGroup;
+			children = (
+				0373DA7E2AC9AF1400B293B7 /* Vehicle.swift */,
+				0373DA802AC9B01200B293B7 /* Car.swift */,
+				0373DA822AC9B2AA00B293B7 /* Motorcycle.swift */,
+			);
+			path = Homework2;
+			sourceTree = "<group>";
+		};
 		03E0F9F22AC34D66003CEAF8 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				03E0FA2E2AC34E05003CEAF8 /* Homework1 */,
+				0373DA7D2AC9AE6700B293B7 /* Homework2 */,
 				03E0F9FE2AC34D66003CEAF8 /* AppDelegate.swift */,
 				03E0FA002AC34D66003CEAF8 /* SceneDelegate.swift */,
 				03E0FA022AC34D66003CEAF8 /* ViewController.swift */,
@@ -271,8 +288,11 @@
 			files = (
 				03E0FA302AC34E48003CEAF8 /* MyTestClass.swift in Sources */,
 				03E0FA032AC34D66003CEAF8 /* ViewController.swift in Sources */,
+				0373DA812AC9B01200B293B7 /* Car.swift in Sources */,
 				03E0F9FF2AC34D66003CEAF8 /* AppDelegate.swift in Sources */,
+				0373DA7F2AC9AF1400B293B7 /* Vehicle.swift in Sources */,
 				03E0FA012AC34D66003CEAF8 /* SceneDelegate.swift in Sources */,
+				0373DA832AC9B2AA00B293B7 /* Motorcycle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

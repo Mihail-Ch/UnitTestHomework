@@ -12,7 +12,7 @@ enum ExceptionError: Error {
     case exceptionDescription(description: String)
 }
 
-class MyClassTask {
+ public class MyClassTask {
     
     func sumList(list1: [Int], list2: [Int]) throws -> [Int] {
         if list1.count != list2.count {

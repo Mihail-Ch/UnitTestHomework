@@ -10,50 +10,60 @@ import XCTest
 
 final class UnitTestHomeworkTests: XCTestCase {
     
-    var myClassTest: MyClassTask!
+    var car: Car!
+    var motorcycle: Motorcycle!
     
-    func sumListShouldBeCorrect() throws {
-        let list1 = [1,2,3]
-        let list2 = [1,2,3]
-        let result = [2,4,6]
-        let resultTest = try myClassTest.sumList(list1: list1, list2: list2)
-        XCTAssertEqual(result, resultTest, "Сумма списков не верна!")
-    }
+    let car1: Car = Car(company: "Volvo", model: "xc90", year: 2020)
+    let motorcycle1: Motorcycle = Motorcycle(company: "Honda", model: "XXX", year: 2010)
     
-    func findMaxNumber() throws {
-        let list = [1,3,5,7,2]
-        let result = 7
-        let resultTest = try myClassTest.findMax(numbers: list)
-        XCTAssertEqual(result, resultTest, "Не верный максимальный элемент!")
-    }
     
-    func filterStringArrayTest() throws {
-        let list = ["Hello", "World", "Swift", "Geek"]
-        let result = ["Hello", "World", "Swift"]
-        let resultTest = try myClassTest.filterStrings(words: list, minLength: 5)
-        XCTAssertEqual(result, resultTest, "Не правильно отфильтрован массив строк!")
-    }
-
-    override func setUpWithError() throws {
-        myClassTest = MyClassTask()
-    }
-
-    override func tearDownWithError() throws {
-        myClassTest = nil
-        try super.tearDownWithError()
-    }
-
-    func testExample() throws {
-        try sumListShouldBeCorrect()
-        try findMaxNumber()
-        try filterStringArrayTest()
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testIsAnInstanceOf() {
+        if car1 is Vehicle {
+            XCTAssertTrue(true)
+        } else {
+            XCTAssertThrowsError("Не является экземпляром транспортного средства")
         }
+    }
+    
+    func testCarHaveFourWheels() {
+        let carWheels = car1.numWheels
+        if carWheels == 4 {
+            XCTAssertTrue(true)
+        } else {
+            XCTAssertThrowsError("Не хватает колес")
+        }
+    }
+    
+    func testMotorcycleHaveTwoWheels() {
+        let motoWheels = motorcycle1.numWheels
+        if motoWheels == 2 {
+            XCTAssertTrue(true)
+        } else {
+            XCTAssertThrowsError("Не хватает колес")
+        }
+    }
+    
+    func testCarDevelopsSpeed() {
+        car1.testDrive()
+        XCTAssertEqual(car1.speed, 60, "Скорость не соответствует")
+    }
+
+    
+    func testMotoDevelopsSpeed() {
+        motorcycle1.testDrive()
+        XCTAssertEqual(motorcycle1.speed, 75, "Скорость не соответствует")
+    }
+    
+    func testCarStopOnParking() {
+        car1.testDrive()
+        car1.park()
+        XCTAssertEqual(car1.speed, 0, "Машина не остановилась")
+    }
+    
+    func testMotoStopOnParking() {
+        motorcycle1.testDrive()
+        motorcycle1.park()
+        XCTAssertEqual(motorcycle1.speed, 0, "Мотоцикл не остановился")
     }
 
 }
