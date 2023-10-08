@@ -10,20 +10,21 @@ import XCTest
 
 final class UnitTestHomeworkTests: XCTestCase {
     
-    var homework3: Homework_3!
+    var bookService: BookService!
     
     
     override func setUp() {
         super.setUp()
-        homework3 = Homework_3()
+        bookService = BookService(bookRepository: InMemoryBookRepository())
+        
     }
     
-    func testEvenOddNumber() {
-        XCTAssert(homework3.evenOddNumber(n: 10) ,"не является четным числом")
+    func testFindByIdBook() {
+        XCTAssertNil(bookService.findBookById(id: "1"), "Книга не найдена")
     }
     
-    func testNumberInInterval() {
-        XCTAssert(homework3.numberInInterval(n: 25), "не попадает в интервал")
+    func testFindAllBooks() {
+        XCTAssertNil(bookService.findAllBooks(), "Книг нет")
     }
     
    

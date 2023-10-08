@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		033CF5B42AD2AF3F00CF2567 /* BookRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CF5B32AD2AF3F00CF2567 /* BookRepositoryProtocol.swift */; };
+		033CF5B62AD2AF7F00CF2567 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CF5B52AD2AF7F00CF2567 /* Book.swift */; };
+		033CF5B82AD2B11100CF2567 /* BookService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CF5B72AD2B11100CF2567 /* BookService.swift */; };
+		033CF5BA2AD2B1AC00CF2567 /* InMemoryBookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CF5B92AD2B1AC00CF2567 /* InMemoryBookRepository.swift */; };
 		0373DA7F2AC9AF1400B293B7 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373DA7E2AC9AF1400B293B7 /* Vehicle.swift */; };
 		0373DA812AC9B01200B293B7 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373DA802AC9B01200B293B7 /* Car.swift */; };
 		0373DA832AC9B2AA00B293B7 /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0373DA822AC9B2AA00B293B7 /* Motorcycle.swift */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		033CF5B32AD2AF3F00CF2567 /* BookRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepositoryProtocol.swift; sourceTree = "<group>"; };
+		033CF5B52AD2AF7F00CF2567 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		033CF5B72AD2B11100CF2567 /* BookService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookService.swift; sourceTree = "<group>"; };
+		033CF5B92AD2B1AC00CF2567 /* InMemoryBookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryBookRepository.swift; sourceTree = "<group>"; };
 		0373DA7E2AC9AF1400B293B7 /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		0373DA802AC9B01200B293B7 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		0373DA822AC9B2AA00B293B7 /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
@@ -86,6 +94,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		033CF5B22AD2AF1A00CF2567 /* Homework4 */ = {
+			isa = PBXGroup;
+			children = (
+				033CF5B32AD2AF3F00CF2567 /* BookRepositoryProtocol.swift */,
+				033CF5B52AD2AF7F00CF2567 /* Book.swift */,
+				033CF5B72AD2B11100CF2567 /* BookService.swift */,
+				033CF5B92AD2B1AC00CF2567 /* InMemoryBookRepository.swift */,
+			);
+			path = Homework4;
+			sourceTree = "<group>";
+		};
 		0373DA7D2AC9AE6700B293B7 /* Homework2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +149,7 @@
 				03E0FA2E2AC34E05003CEAF8 /* Homework1 */,
 				0373DA7D2AC9AE6700B293B7 /* Homework2 */,
 				03CD58402ACD535D00C7998E /* Homework3 */,
+				033CF5B22AD2AF1A00CF2567 /* Homework4 */,
 				03E0F9FE2AC34D66003CEAF8 /* AppDelegate.swift */,
 				03E0FA002AC34D66003CEAF8 /* SceneDelegate.swift */,
 				03E0FA022AC34D66003CEAF8 /* ViewController.swift */,
@@ -299,12 +319,16 @@
 			files = (
 				03E0FA302AC34E48003CEAF8 /* MyTestClass.swift in Sources */,
 				03CD58462ACD5B4F00C7998E /* Homework_3.swift in Sources */,
+				033CF5B42AD2AF3F00CF2567 /* BookRepositoryProtocol.swift in Sources */,
 				03E0FA032AC34D66003CEAF8 /* ViewController.swift in Sources */,
 				0373DA812AC9B01200B293B7 /* Car.swift in Sources */,
 				03E0F9FF2AC34D66003CEAF8 /* AppDelegate.swift in Sources */,
 				0373DA7F2AC9AF1400B293B7 /* Vehicle.swift in Sources */,
 				03E0FA012AC34D66003CEAF8 /* SceneDelegate.swift in Sources */,
+				033CF5B62AD2AF7F00CF2567 /* Book.swift in Sources */,
 				0373DA832AC9B2AA00B293B7 /* Motorcycle.swift in Sources */,
+				033CF5BA2AD2B1AC00CF2567 /* InMemoryBookRepository.swift in Sources */,
+				033CF5B82AD2B11100CF2567 /* BookService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
