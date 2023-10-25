@@ -12,11 +12,9 @@ final class UnitTestHomeworkTests: XCTestCase {
     
     var bookService: BookService!
     
-    
     override func setUp() {
         super.setUp()
         bookService = BookService(bookRepository: InMemoryBookRepository())
-        
     }
     
     func testFindByIdBook() {
@@ -26,6 +24,4 @@ final class UnitTestHomeworkTests: XCTestCase {
     func testFindAllBooks() {
         XCTAssertNil(bookService.findAllBooks(), "Книг нет")
     }
-    
-   
 }
